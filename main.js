@@ -10,10 +10,10 @@ var startScreen = document.querySelector('.start-screen')
 var newGameButton = document.querySelector('.start-new-game')
 var startButton = document.querySelector('.start-button')
 /*~~~~~~~~~~~~GAMEPLAY VARIABLES~~~~~~~~~~~~*/
-var burger = `<img src='https://www.svgrepo.com/show/43115/burger.svg'>`
-var hotdog = `<img src='https://www.svgrepo.com/show/14909/hot-dog.svg'>`
-var player1 = new Player('Hamburger', burger)
-var player2 = new Player('Hotdog', hotdog)
+var burger = `<img src='assets/dinosaur-svgrepo-com.svg'>`
+var hotdog = `<img src='assets/poo-svgrepo-com.svg'>`
+var player1 = new Player('Lucas', burger)
+var player2 = new Player('Tommy', hotdog)
 var game = new Game(player1, player2)
 /*~~~~~~~~~~~~EVENT LISTENERS~~~~~~~~~~~~*/
 gameBoard.addEventListener('click', validateMove)
@@ -26,7 +26,7 @@ function validateMove() {
   if (!event.target.classList.contains('selected')) {
     alternatePlayers()
   } else {
-      window.alert('Keep Yer Danged Snacks Away From My Danged Snacks!!!')
+      window.alert('Nice try! Choose an empty box!')
     }
     determineTie()
 }
@@ -41,11 +41,11 @@ function determineTie() {
 function alternatePlayers() {
   if (game.currentPlayer == 1) {
     game.currentPlayer = 0
-    playerTurn.innerText = `Hotdog, its your turn!`
+    playerTurn.innerText = `Tommy, its your turn!`
     placeItem('hamburger')
   } else {
       game.currentPlayer = 1
-      playerTurn.innerText = `Hamburger, its your turn!`
+      playerTurn.innerText = `Lucas, its your turn!`
       placeItem('hotdog')
     }
 }
@@ -59,13 +59,13 @@ function placeItem(item) {
 
 function declareWinner() {
   if (game.currentPlayer === 0) {
-    playerTurn.innerText = `Hamburger Wins!! Relish This Moment!`
+    playerTurn.innerText = `Lucas Wins!! Roarrrr!!`
     player1.wins += 1
     updateScore()
     triggerReset()
   }
   if (game.currentPlayer === 1){
-    playerTurn.innerText = `Congrats, Hotdog, You're a Weiner!!`
+    playerTurn.innerText = `Good job, Tommy. Not bad for a smelly turd!!`
     player2.wins += 1
     updateScore()
     triggerReset()
@@ -91,9 +91,9 @@ function resetBoard() {
   }
     game.board = ["", "", "", "", "", "", "", "", ""]
   if (game.currentPlayer == 0) {
-    playerTurn.innerText = `Hotdog, its your turn!`
+    playerTurn.innerText = `Tommy, its your turn!`
   } else {
-      playerTurn.innerText = `Hamburger, its your turn!`
+      playerTurn.innerText = `Lucas, its your turn!`
     }
 }
 

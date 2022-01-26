@@ -1,6 +1,6 @@
 body,
 html {
-  background: url(https://images.thdstatic.com/productImages/7047b0db-0c8c-48cd-a48f-17b08b982031/svn/reds-pinks-sorbco-tablecloths-cd-tc90rw-64_600.jpg);
+  background: url(assets/monstera-leaves-seamless-tropical-background-vector-20874386.jpeg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,11 +46,11 @@ h5 {
   height: 90vh;
   width: 700px;
   border-radius: 15px;
-  border-color: red;
+  border-color: #9c5021;
   border-style: dashed;
   border-width: thick;
-  background-color: yellow;
-  opacity: 95%;
+  background-color: #ffffff;
+  opacity: 90%;
   color: black;
   font-size: 50px;
   text-align: center;
@@ -91,8 +91,8 @@ h5 {
   border-width: thick;
   border-style: solid;
   border-radius: 15px;
-  background-color: red;
-  opacity: 90%;
+  background-color: #96be25;
+  opacity: 95%;
   align-self: flex-start;
 }
 
@@ -106,7 +106,7 @@ h5 {
   animation-timing-function: ease-in-out;
   animation-iteration-count: once;
   animation-direction: alternate;
-  background: url(assets/burger-svgrepo-com.svg);
+  background: url(assets/dinosaur-svgrepo-com.svg);
 }
 
 .hotdog {
@@ -114,20 +114,20 @@ h5 {
   animation-timing-function: ease-in-out;
   animation-iteration-count: once;
   animation-direction: alternate;
-  background: url(assets/hot-dog-svgrepo-com.svg)
+  background: url(assets/poo-svgrepo-com.svg)
 }
 
 
 .start-new-game {
   height: 45px;
-  background: #D26522;
-  color: #E9E9F3;
+  background: #9c5021;
+  color: yellow;
   font-size: 22px;
   font-weight: bold;
   border-radius: 32px;
   border-width: thick;
   border-style: solid;
-  border-color: #D26522;
+  border-color: brown;
   margin-top: 35px;
   width: 300px;
 }
@@ -138,23 +138,23 @@ h5 {
   align-items: center;
   justify-content: center;
   font-size: 60px;
-  color: red;
-  background-image: url(assets/fast-food-cute-burger-hot-dog-mustard-sauces-cartoon-character-free-vector.webp);
-  height: 100vh;
-  width: 200vh;
+  color: #9c5021;
+  background-image: url(assets/dinopoop.webp);
+  height: 120vh;
+  width: 175vh;
 }
 
 .start-button {
   height: 45px;
-  background: #D26522;
-  color: #E9E9F3;
+  background: #9c5021;
+  color: yellow;
   font-size: 22px;
   font-weight: bold;
   border-radius: 32px;
   border-width: thick;
   border-style: solid;
-  border-color: #D26522;
-  margin-top: 0px;
+  border-color: brown;
+  margin-top: 35px;
   width: 300px;
 }
 
@@ -168,7 +168,7 @@ h3 {
   @keyframes fadein {
     from {
       opacity: 0;
-      font-size: 500%;
+      font-size: 400%;
     }
     to {
       opacity: 1
