@@ -1,0 +1,181 @@
+body,
+html {
+  background: url(https://images.thdstatic.com/productImages/7047b0db-0c8c-48cd-a48f-17b08b982031/svn/reds-pinks-sorbco-tablecloths-cd-tc90rw-64_600.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Ubuntu Mono', sans-serif;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  animation: grow-and-shrink 4000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+  @keyframes grow-and-shrink {
+    0% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+h5 {
+  margin: 40px;
+  margin-top: 30px;
+}
+
+.game-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  height: 90vh;
+  width: 700px;
+  border-radius: 15px;
+  border-color: red;
+  border-style: dashed;
+  border-width: thick;
+  background-color: yellow;
+  opacity: 95%;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  color: black;
+  height: 400px;
+  width: 400px;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  font-size: 60px;
+  border-spacing: 80px;
+  background-color: #96be25;
+  border-color: #285616;
+  border-style: solid;
+  border-width: thick;
+}
+
+.player-one,
+.player-two {
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  font-size: 40px;
+  height: 90vh;
+  width: 325px;
+  color: black;
+  border-color: green;
+  border-width: thick;
+  border-style: solid;
+  border-radius: 15px;
+  background-color: red;
+  opacity: 90%;
+  align-self: flex-start;
+}
+
+.counter  {
+  margin-top: 50px;
+  font-size: 60px;
+}
+
+.hamburger {
+  animation: grow-and-shrink 250ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: once;
+  animation-direction: alternate;
+  background: url(assets/burger-svgrepo-com.svg);
+}
+
+.hotdog {
+  animation: grow-and-shrink 500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: once;
+  animation-direction: alternate;
+  background: url(assets/hot-dog-svgrepo-com.svg)
+}
+
+
+.start-new-game {
+  height: 45px;
+  background: #D26522;
+  color: #E9E9F3;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 32px;
+  border-width: thick;
+  border-style: solid;
+  border-color: #D26522;
+  margin-top: 35px;
+  width: 300px;
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: red;
+  background-image: url(assets/fast-food-cute-burger-hot-dog-mustard-sauces-cartoon-character-free-vector.webp);
+  height: 100vh;
+  width: 200vh;
+}
+
+.start-button {
+  height: 45px;
+  background: #D26522;
+  color: #E9E9F3;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 32px;
+  border-width: thick;
+  border-style: solid;
+  border-color: #D26522;
+  margin-top: 0px;
+  width: 300px;
+}
+
+h3 {
+  margin-top: 475px;
+  margin-bottom: 30px;
+  animation-duration: 5s;
+  animation-name: fadein;
+  animation: fadein 10000ms;
+}
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      font-size: 500%;
+    }
+    to {
+      opacity: 1
+      font-size: 110%;
+    }
+  }
+
+.hidden {
+  display: none;
+}
